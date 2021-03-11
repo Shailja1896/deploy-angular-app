@@ -1,0 +1,57 @@
+<!-- Nav bar -->
+
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand">
+        <img src="assets/img/werq.svg" alt="logo" width="30" height="30" class="d-inline-block align-top ">
+        Log In
+    </a>
+</nav> -->
+<!-- Nav bar -->
+
+<div class="container lgn-container">
+    <!---------- Start Sign Up doctor code screen------------>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="p-4">
+                <div class="">
+                    <div style="font-size: 25px;">Sign In</div>
+                    <form [formGroup]="signInForm">
+                        <div class=" form-group">
+                            <label for="">Username</label>
+                            <input class="form-control " placeholder="Username" formControlName="username"
+                                autocomplete="off" name="somethingAutofillDoesntKnow" type="text">
+                            <div *ngIf="signInForm.get('username').errors && submitClick">
+                                <p *ngIf="signInForm.get('username').errors?.required" class="error-text">Please enter
+                                    username!</p>
+                            </div>
+                        </div>
+                        <div class=" form-group">
+                            <label for="">Password</label>
+                            <input placeholder="Password" [type]="isActive ? 'password' : 'text'"
+                                formControlName="password" class="form-control">
+                            <p *ngIf="incorrectData" class="error-text">{{incorrectData}}</p>
+                            <span class="close_eye" (click)="isActive = !isActive">
+                                <!-- <i class="fa " [ngClass]="{'fa-eye-slash': isActive, 'fa-eye': !isActive}"
+                                    aria-hidden="true"></i> -->
+                                <span *ngIf="isActive">Show</span>
+                                <span *ngIf="!isActive">Hide</span>
+                            </span>
+                            <div *ngIf="signInForm.get('password').errors && submitClick">
+                                <p *ngIf="signInForm.get('password').errors?.required" class="error-text">Please enter
+                                    password!</p>
+                                <p *ngIf="signInForm.get('password').errors?.minlength && !signInForm.get('password').errors?.required" class="error-text">
+                                    Please enter at least 5 characters!</p>
+                            </div>
+                        </div>
+                        <button type="submit" value="next" class="btn lg-bttn btn-style" (click)="login()">LOG
+                            IN</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <ngx-spinner bdColor="rgba(51,51,51,0.8)" size="medium" color="#fff" type="ball-spin">
+    <p style="font-size: 20px; color: white">Loading...</p>
+</ngx-spinner> -->

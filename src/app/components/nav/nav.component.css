@@ -1,0 +1,10 @@
+.nav-menu {
+    padding: 10px 10px 10px 10px;
+    color: white;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.bg-dark {
+    background-color: #05aba3bd !important;
+}

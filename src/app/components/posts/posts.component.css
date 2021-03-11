@@ -1,0 +1,32 @@
+ul {
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-top: 1px solid #ccc;
+  }
+  li {
+    line-height: 1.5em;
+    float: left;
+    display: inline;
+  }
+  #double li {
+    width: 50%;
+  }
+
+  .post-container {
+    border: 1px blue solid;
+    margin: 5%;
+    padding: 5%;
+    height: 200px;
+    overflow: auto;
+  }
+
+  .label {
+    text-transform: capitalize;
+    font-size: 18px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
