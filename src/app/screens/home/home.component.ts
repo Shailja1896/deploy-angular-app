@@ -13,6 +13,7 @@ export class HomeComponent implements OnInit {
   userList: UserModel[] = [];
   filteredList: UserModel[] = [];
   serachText: string;
+  isDataFetched: boolean;
 
   constructor(private router: Router, private network: NetworkService) { }
 
@@ -29,6 +30,7 @@ export class HomeComponent implements OnInit {
     const url = 'https://jsonplaceholder.typicode.com/users';
     this.network.getHttpRequest(url).subscribe(
       (res: UserModel[]) => {
+        this.isDataFetched = true;
         this.userList = res;
         this.filteredList = res;
         console.log('response', res);

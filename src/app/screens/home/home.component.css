@@ -1,0 +1,25 @@
+.input-container {
+    overflow: hidden !important;
+    margin-right: 1% !important;
+}
+
+.search-input {
+    margin-left: 1%;
+    margin-top: 1%;
+    float: right;
+    clear: both;
+}
+
+.no-data-found {
+    width: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    color: #808080b3;
+    font-size: 18px;
+}

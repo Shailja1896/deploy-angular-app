@@ -1,0 +1,11 @@
+.user-box{
+    width: 98%;margin: auto;border: 1px #1877f2 solid;margin-top: 20px;    padding: 10px;
+}
+
+button {
+    border: none;
+    padding: 5px 15px 5px 15px;
+    background-color: #1877f2;
+    color: white;
+    border-radius: 5px;
+}

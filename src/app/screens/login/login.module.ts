@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './login.component';
 import { RouterModule, Routes } from '@angular/router';
-import { NgxSpinnerModule } from 'ngx-spinner';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SharedAppModule } from 'src/app/shared/shared.module';
 
 const appRoutes: Routes = [
   { path: '', component: LoginComponent }
@@ -14,7 +14,7 @@ const appRoutes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(appRoutes),
-    NgxSpinnerModule,
+    SharedAppModule,
     ReactiveFormsModule
   ]
 })

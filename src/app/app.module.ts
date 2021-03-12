@@ -11,6 +11,8 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { SharedAppModule } from './shared/shared.module';
+import { AlertModule } from 'ngx-alerts';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,10 @@ import { HttpClientModule } from '@angular/common/http';
     }),
     BrowserAnimationsModule,
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    SharedAppModule,
+    AlertModule,
+    AlertModule.forRoot({maxMessages: 5, timeout: 5000})
   ],
   providers: [],
   bootstrap: [AppComponent]

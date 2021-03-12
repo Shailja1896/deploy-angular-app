@@ -1,6 +1,6 @@
-<div style="width: 98%;margin: auto;border: 1px green solid;margin-top: 20px;    padding: 10px;">
+<div class="user-box">
     <div class="row">
-        <div class="col-sm-2">
+        <div class="col-sm-3">
             <label>Name</label>
             <div>{{userdata.name}}</div>
         </div>
@@ -9,16 +9,16 @@
             <div>{{userdata.email}}</div>
 
         </div>
-        <div class="col-sm-2">
+        <div class="col-sm-3">
             <label>Contact</label>
             <div>{{userdata.phone}}</div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-2">
             <label>Website</label>
             <div>{{userdata.website}}</div>
         </div>
-        <div class="col-sm-2">
-            <button (click)="openPost()">posts</button>
+        <div class="col-sm-1 text-center">
+            <button (click)="openPost()">Posts</button>
         </div>
     </div>
 </div>

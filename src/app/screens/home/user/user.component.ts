@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { UserModel } from 'src/app/screens/home/home/home.model';
+import { UserModel } from 'src/app/screens/home/home.model';
 
 @Component({
   selector: 'app-user',

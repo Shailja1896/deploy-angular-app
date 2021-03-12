@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { PostModel, UserModel } from 'src/app/screens/home/home/home.model';
+import { PostModel, UserModel } from 'src/app/screens/home/home.model';
 import { NetworkService } from 'src/app/services/network.service';
 
 @Component({

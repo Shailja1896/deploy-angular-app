@@ -1,0 +1,14 @@
+<div class="container-fluid">
+    <div class="input-container">
+        <input class="search-input" [(ngModel)]='serachText' type="text" (ngModelChange)='searchUser(serachText)'
+            placeholder="Search User" />
+    </div>
+    <ng-container *ngIf="filteredList.length else noDataFound">
+        <span *ngFor='let user of filteredList'>
+            <app-user [userData]='user' (openPostEvent)="openPost($event)"></app-user>
+        </span>
+    </ng-container>
+    <ng-template #noDataFound>
+        <div *ngIf="isDataFetched" class="no-data-found">No data found for searched user!</div>
+    </ng-template>
+</div>
