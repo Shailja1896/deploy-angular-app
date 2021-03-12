@@ -20,6 +20,6 @@ export const appRoutes: Routes = [
     },
     {
         path: '**',
-        redirectTo: '/home'
+        redirectTo: '/login'
     }
 ];
