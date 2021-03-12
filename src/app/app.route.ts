@@ -21,14 +21,14 @@ export const appRoutes: Routes = [
     {
         path: 'login',
         loadChildren: () => import('./screens/login/login.module').then(m => m.LoginModule),
-       canActivate: [LoginAuthguardService]
+        canActivate: [LoginAuthguardService]
     },
     // {
     //     path: '404-page',
     //     component: PageNotFoundComponent
     // },
-    // {
-    //     path: '**',
-    //     redirectTo: '/404-page'
-    // }
+    {
+        path: '**',
+        redirectTo: '/home'
+    }
 ];
