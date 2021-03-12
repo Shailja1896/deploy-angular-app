@@ -8,11 +8,6 @@ export const appRoutes: Routes = [
         redirectTo: '/home',
         pathMatch: 'full'
     },
-    // {
-    //     path: 'offline',
-    //     component: OfflineComponent,
-    //     canActivate: [AuthguardService]
-    // },
     {
         path: 'home',
         loadChildren: () => import('./screens/home/home.module').then(m => m.HomeModule),
@@ -23,10 +18,6 @@ export const appRoutes: Routes = [
         loadChildren: () => import('./screens/login/login.module').then(m => m.LoginModule),
         canActivate: [LoginAuthguardService]
     },
-    // {
-    //     path: '404-page',
-    //     component: PageNotFoundComponent
-    // },
     {
         path: '**',
         redirectTo: '/home'
