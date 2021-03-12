@@ -30,7 +30,6 @@ import { AlertModule } from 'ngx-alerts';
     CommonModule,
     HttpClientModule,
     SharedAppModule,
-    AlertModule,
     AlertModule.forRoot({maxMessages: 5, timeout: 5000})
   ],
   providers: [],

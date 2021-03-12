@@ -5,7 +5,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { UserComponent } from './user/user.component';
 import { PostsComponent } from './posts/posts.component';
-import { SharedAppModule } from 'src/app/shared/shared.module';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -22,8 +21,7 @@ const appRoutes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(appRoutes),
-    FormsModule,
-    SharedAppModule
+    FormsModule
   ],
   exports: [
     UserComponent
